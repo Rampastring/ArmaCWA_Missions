@@ -1,0 +1,31 @@
+_camera = "camera" camCreate [8388.39,4348.80,0.74] 
+_camera cameraEffect ["internal","back"]
+
+enableRadio false
+setaccTime 0.2
+
+;=== 19:15:47
+_camera camSetTarget velit
+_camera camSetRelPos [-0.03,0.58,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 19:15:47
+_camera camSetTarget velit
+_camera camSetRelPos [-0.03,0.58,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+
+
+titleCut ["","BLACK OUT", 0.6]
+
+~0.6
+
+setaccTime 1
+
+aU cameraEffect ["terminate","back"]
+camDestroy _camera
+
+Over3=true

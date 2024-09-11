@@ -1,0 +1,16 @@
+titleCut ["","BLACK IN", 3]
+
+;?benchmark>700:goto "PI700"
+;setViewDistance 250
+;goto "End"
+
+;#PI700
+;?benchmark>1000:goto "PI1000"
+;setViewDistance 350
+;goto "End"
+
+;#PI1000
+;setViewDistance 500
+
+;#End
+;exit

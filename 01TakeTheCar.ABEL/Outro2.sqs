@@ -1,0 +1,49 @@
+_camera = "camera" camCreate [8388.39,4348.80,0.74] 
+_camera cameraEffect ["internal","back"]
+
+velit setpos Semhle
+aP switchmove "effectstand"
+ap setpos getmarkerpos "sem"
+aP setdir 110
+
+enableRadio false
+
+; Commander
+_camera camSetTarget velit
+_camera camSetRelPos [-0.05,0.53,1.57]
+_camera camSetFOV 0.643
+_camera camCommit 0
+@camCommitted _camera
+
+velit say "S01v06"
+~4
+
+; Player
+_camera camSetTarget [-92460.17,16997.94,602.13]
+_camera camSetPos [7050.27,7128.96,1.52]
+_camera camSetFOV 0.237
+_camera camCommit 0
+@camCommitted _camera
+
+~1
+aP say "s01v07"
+~4
+
+; Oba
+_camera camSetTarget [105457.16,24632.21,-2882.29]
+_camera camSetPos [7045.41,7128.80,1.55]
+_camera camSetFOV 0.851
+_camera camCommit 0
+@camCommitted _camera
+
+velit say "s01v08"
+
+~3
+titleCut ["","BLACK OUT", 2]
+
+~2
+
+aU cameraEffect ["terminate","back"]
+camDestroy _camera
+
+Over2=true

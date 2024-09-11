@@ -1,0 +1,36 @@
+LANGUAGE,English,French,Italian,Spanish,German, Comment
+
+STR_S01r01,"YOU'RE IN POSITION, SIX. NOW GRAB THAT TRUCK AND GET OUT OF THERE. OUT.","VOUS ETES EN POSITION, SIX. BIEN, MONTEZ DANS CE CAMION ET TIREZ-VOUS D'ICI. TERMINE.","SEI IN POSIZIONE, SEI. ADESSO PRENDI QUELL'AUTOCARRO ED ESCI DI LÌ. CHIUDO.","SEIS, ESTÁ EN POSICIÓN. SUBA AL CAMIÓN Y SALGA PITANDO. CORTO Y CIERRO.","SIE SIND IN STELLUNG, SECHS. NEHMEN SIE SICH DEN LASTER UND VERSCHWINDEN SIE DA. ENDE.",Sergeant Hawley
+
+STR_S01r02,"COMMAND, THIS IS ALPHA. THERE'S, UH, BEEN AN ACCIDENT. THE CAR'S WASTED. WHAT SHOULD I DO? OVER.","COMMANDEMENT, ICI ALPHA. NOUS AVONS EU, EUH, UN ACCIDENT. LA VOITURE EST FOUTUE. QU'EST-CE QUE JE FAIS ? A VOUS.","COMANDO, QUI ALFA. C'È STATO UN... INCIDENTE. L'AUTO È FUORI USO. COSA DEVO FARE? PASSO.","COMANDO, AQUÍ ALFA. HA HABIDO... UN PEQUEÑO ACCIDENTE. EL COCHE HA QUEDADO INSERVIBLE. ¿QUÉ HAGO? CAMBIO Y CORTO.","KOMMANDO, HIER SPRICHT ALPHA. ÄHM... ES HAT EINEN UNFALL GEGEBEN. DAS FAHRZEUG IST HIN. WAS SOLL ICH MACHEN? OVER.",Armstrong
+STR_S01r02a,"GET BACK TO DOURDAN AND FACE THE MUSIC, SOLDIER. OUT.","RETOURNEZ A DOURDAN ET AFFRONTEZ LA TEMPETE, SOLDAT. TERMINE.","TORNA A DOURDAN E AFFRONTA LE CONSEGUENZE, SOLDATO. CHIUDO.","VUELVA A DOURDAN Y AGUANTE EL CHAPARRÓN, SOLDADO. CORTO Y CIERRO.",KEHREN SIE NACH DOURDAN ZURÜCK. DA WERDEN SIE SCHON WAS ZU HÖREN BEKOMMEN. ENDE.,Sergeant Hawley
+
+STR_S01v03,"Woah, I'm way off course. Better check my map.","Oh la, j'ai complètement dévié, moi. Je ferais bien de vérifier ma carte.","Diavolo, sono completamente fuori rotta. È meglio che controlli la mappa.","Puf, me he alejado mucho de la ruta. Será mejor mirar el mapa.","Mist, bin völlig vom Kurs abgekommen. Sollte lieber auf der Landkarte nachsehen.", Armstrong - to himself
+
+STR_S01v04,"That's nice work, soldier. I knew you had it in you.","Beau travail, soldat. Je savais que vous pouviez réussir.","Ottimo lavoro, soldato. Lo sapevo che eri in gamba.","Un trabajo excelente, soldado. Sabía que lo conseguiría.","Gute Arbeit, Soldat. Wusste ich doch, dass Sie was draufhaben.",Sergeant Hawley
+STR_S01v05,"What the...? Well, at least you made it back in one piece.","Qu'est-ce que...? Bon, au moins, vous êtes revenu sain et sauf.","Che diamine...? Bene, almeno sei tornato tutto intero.","¿Qué demonios...? Bueno, al menos ha regresado entero.,","Aber was...? Naja, immerhin sind sie heil wiedergekommen.",Sergeant Hawley
+STR_S01v06,"What are you playing at, soldier? Where the hell's that UAZ? Go get it!","A quoi jouez-vous, soldat ? Où est passé ce foutu UAZ ? Allez le chercher !","A che gioco stai giocando, soldato? Dove diavolo è quella UAZ? Vai a prenderla!","¿A qué juega, soldado? ¿Dónde narices está ese UAZ? ¡Vaya a buscarlo!","Was treiben Sie eigentlich, Soldat? Und wo ist der Jeep abgeblieben? Los, holen Sie ihn!", Sergeant Hawley
+STR_S01v07,"I made it, sir. But, uh, the car didn't. It's still back there somewhere.","J'ai réussi. Mais, euh, pas la voiture. Elle est restée quelque part là-bas.","Io ce l'ho fatta, signore. Ma... l'auto no. È rimasta là da qualche parte.","Yo he conseguido regresar, señor. Pero, ejem, el coche no. Se ha quedado en el camino.","Ich hab's geschafft, Sir. Das Fahrzeug aber leider nicht. Es ist noch irgendwo da draußen.",Armstrong
+STR_S01v08,Guess I'd better send someone to go pick it up.,Je crois que je ferais mieux d'envoyer quelqu'un la chercher.,È meglio che mandi qualcuno a riprenderla.,Pues habrá que enviar a alguien a buscarlo.,Ich schicke wohl besser jemanden zum Abholen.,Sergeant Hawley; annoyed
+
+
+-------- Titles -------,,,,,,
+
+STR_END_6,Arrested by the MPs,Arrêté par la police militaire.,Arrestato dalla polizia militare.,Arrestado por la Policía militar.,Von der Militärpolizei verhaftet., Title
+
+STR_HINT_0,"Default controls: \n\nW, S - forward / backward\nA, D - strafe left / right\nZ - lie down / stand up\nV - reload weapon\nSpace - change weapon\nReturn - action menu\n[,] - choose  action\n\nLeft mouse button - fire\nRight mouse button - zoom","Commandes par défaut : \n\nZ, S - avant / arrière\nQ, D - déplacement latéral à gauche / droite\nZ - au sol / debout\nV - recharger arme\nEspace - changer arme\nEntrée - menu Action\n[;] - choisir action\n\nBouton souris gauche - tirer\nBouton souris droit - zoom","Comandi predefiniti: \n\nW, S - avanti / indietro\nA, D - spostarsi lateralmente a sinistra / a destra\nZ - sdraiarsi / alzarsi\nV - ricaricare arma\nBarra spaziatrice - cambiare arma\nInvio - menu Azione\n[,] - scegliere azione\n\nPulsante sinistro del mouse - fuoco\nPulsante destro del mouse - zoom","Controles predeterminados: \n\nW, S: avanzar/retroceder\nA,D: avanzar de lado hacia la izquierda/derecha\nZ: agacharse o levantarse\nV: recargar arma\nBarra espaciadora: cambiar arma\nRetorno: abrir menú de acciones\n[,]: seleccionar acción\n\nBotón izquierdo del ratón: fuego\nBotón derecho del ratón: acercar o alejar","Standardsteuerung: \n\n[W], [S] - vorwärts / rückwärts\n[A], [D] - Feuer links / rechts\n[Z] - hinlegen / aufstehen\n[V] - Waffe neu laden\nLeertaste - Waffe wechseln\nEingabetaste - Aktionsmenü\n[,] - Aktion auswählen\n\nLinke Maustaste - Feuer\nRechte Maustaste - Zoom", Hint
+STR_HINT_1,With the injuries you've sustained you can no longer operate your weapon properly. Find a field hospital or ambulance BMP,"Avec les blessures que vous avez subies, vous n'êtes plus en état d'utiliser votre arme correctement. Trouvez un hôpital ou un BMP médical",In conseguenza delle ferite che hai riportato non sei più in grado di utilizzare la tua arma in modo appropriato. Trova un ospedale da campo o un'ambulanza BMP,Te han herido y te cuesta manejar el arma. Busca un hospital de campo o una ambulancia BMP.,Mit Ihren Wunden können Sie Ihre Waffe nicht länger bedienen. Suchen Sie sich ein Feldlazarett oder einen Krankentransporter., Hint
+STR_HINT_2,"To climb into the car, use the action menu.","Pour monter dans la voiture, utilisez le menu Action.",Per salire in auto usa il menu Azione.,"Para subir al coche, usa el menú de acciones.","Um in das Fahrzeug einzusteigen, verwenden Sie das Aktionsmenü.", Hint
+
+STR_FAR_2,Lost in enemy territory,Perdu en territoire ennemi,Disperso in territorio nemico.,Perdido en territorio enemigo,Auf gegnerischem Gebiet verloren., Descritption only
+
+STR_S01n20,Mission completed,Mission accomplie,Missione compiuta,Misión cumplida.,Einsatz abgeschlossen, Title
+
+STR_S01n10,Insertion point,Point d'insertion,Punto di inserimento,Punto de inserción,Ausgangspunkt, Marker
+STR_S01n11,Find the car,Trouver la voiture,Trova l'auto,Encuentra el vehículo,Finden Sie das Auto, Marker
+STR_S01n12,Meet your commander,Rencontrer le commandant,Incontra il tuo comandante,Reúnete con tu comandante,Treffen Sie Ihren Kommandanten, Marker
+
+STR_S01n13,FIND THE CAR,TROUVER LA VOITURE,TROVA L'AUTO,ENCUENTRA EL VEHÍCULO,FINDEN SIE DAS AUTO, Waypoint
+STR_S01n14,MEETING POINT,POINT DE RENDEZ-VOUS,PUNTO DI INCONTRO,PUNTO DE ENCUENTRO,TREFFPUNKT, Waypoint
+
+STR_S01n40,Near La Trinite,Près de la Trinité,Vicino a La Trinité,Cerca de La Trinite,Nahe La Trinité, PreBriefing

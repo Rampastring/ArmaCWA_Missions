@@ -1,0 +1,142 @@
+respawn=4;
+respawndelay=5;
+
+
+minScore=0
+avgScore=800
+maxScore=1600
+
+onLoadMission=$STR_S01n40
+
+class CfgSounds
+{
+	sounds[] = { };
+	class S01v03
+	{
+		name = "S01v03";
+		sound[] = {"S01v03.ogg", db-10, 1.0};
+		titles[] = 
+		{
+			0, $STR_S01v03
+		};
+	};
+	class S01v04
+	{
+		name = "S01v04";
+		sound[] = {"S01v04.ogg", db-10, 1.0};
+		titles[] = 
+		{
+			0, $STR_S01v04
+		};
+	};
+	class S01v05
+	{
+		name = "S01v05";
+		sound[] = {"S01v05.ogg", db-10, 1.0};
+		titles[] = 
+		{
+			0, $STR_S01v05
+		};
+	};
+	class S01v06
+	{
+		name = "S01v06";
+		sound[] = {"S01v06.ogg", db-10, 1.0};
+		titles[] = 
+		{
+			0, $STR_S01v06
+		};
+	};
+	class S01v07
+	{
+		name = "S01v07";
+		sound[] = {"S01v07.ogg", db-10, 1.0};
+		titles[] = 
+		{
+			0, $STR_S01v07
+		};
+	};
+	class S01v08
+	{
+		name = "S01v08";
+		sound[] = {"S01v08.ogg", db-10, 1.0};
+		titles[] = 
+		{
+			0, $STR_S01v08
+		};
+	};
+
+};
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class S01r01
+	{
+		name = "S01r01";
+		sound[] = {"S01r01.ogg", db-10, 1.0};
+		title = $STR_S01r01;
+	};
+	class S01r02
+	{
+		name = "S01r02";
+		sound[] = {"S01r02.ogg", db-10, 1.0};
+		title = $STR_S01r02;
+	};
+	class S01r02a
+	{
+		name = "S01r02a";
+		sound[] = {"S01r02a.ogg", db-10, 1.0};
+		title = $STR_S01r02a;
+	};
+};
+class CfgSFX
+{
+	sounds[] = {};
+};
+class CfgEnvSounds
+{
+	sounds[] = {};
+};
+
+
+class Weapons
+{
+    class M16GrenadeLauncher
+    {
+        count = 1;
+    };
+    class M4
+    {
+        count = 1;
+    };
+    class M60
+    {
+        count = 1;
+    };   
+};
+
+class Magazines
+{
+    class M16
+    {
+        count = 10;
+    };
+    class HandGrenade
+    {
+        count = 10;
+    };
+    class GrenadeLauncher
+    {
+        count = 10;
+    };
+    class M4
+    {
+        count = 10;
+    };
+    class M60
+    {
+        count = 10;
+    };   
+};
