@@ -1,0 +1,53 @@
+"OfficerE" createUnit [position glReinfSpawn, reinfG1, "", 0.8, "CORPORAL"];
+"SoldierEB" createUnit [position glReinfSpawn, reinfG1, "", 0.2];
+"SoldierELAW" createUnit [position glReinfSpawn, reinfG1, "", 0.2];
+"SoldierEMedic" createUnit [position glReinfSpawn, reinfG1, "", 0.2];
+"SoldierEMG" createUnit [position glReinfSpawn, reinfG1, "", 0.2];
+"SoldierEG" createUnit [position glReinfSpawn, reinfG1, "", 0.2];
+"SoldierELAW" createUnit [position glReinfSpawn, reinfG1, "", 0.2];
+"SoldierEB" createUnit [position glReinfSpawn, reinfG1, "", 0.2];
+(group bmp1) setCombatMode "aware";
+bmp1 setPos (getPos glReinfVehSpawn);
+(crew bmp1) join reinfG1;
+
+~10
+
+"OfficerE" createUnit [position glReinfSpawn, reinfG2, "", 0.8, "CORPORAL"];
+"SoldierEB" createUnit [position glReinfSpawn, reinfG2, "", 0.2];
+"SoldierELAW" createUnit [position glReinfSpawn, reinfG2, "", 0.2];
+"SoldierEMedic" createUnit [position glReinfSpawn, reinfG2, "", 0.2];
+"SoldierEMG" createUnit [position glReinfSpawn, reinfG2, "", 0.2];
+"SoldierEG" createUnit [position glReinfSpawn, reinfG2, "", 0.2];
+"SoldierELAW" createUnit [position glReinfSpawn, reinfG2, "", 0.2];
+"SoldierEB" createUnit [position glReinfSpawn, reinfG2, "", 0.2];
+(group bmp2) setCombatMode "aware";
+bmp2 setPos (getPos glReinfVehSpawn);
+(crew bmp2) join reinfG2;
+
+~10
+
+"OfficerE" createUnit [position glReinfSpawn, reinfG3, "", 0.8, "CORPORAL"];
+"SoldierEB" createUnit [position glReinfSpawn, reinfG3, "", 0.2];
+"SoldierELAW" createUnit [position glReinfSpawn, reinfG3, "", 0.2];
+"SoldierEMedic" createUnit [position glReinfSpawn, reinfG3, "", 0.2];
+"SoldierEMG" createUnit [position glReinfSpawn, reinfG3, "", 0.2];
+"SoldierEG" createUnit [position glReinfSpawn, reinfG3, "", 0.2];
+"SoldierELAW" createUnit [position glReinfSpawn, reinfG3, "", 0.2];
+"SoldierEB" createUnit [position glReinfSpawn, reinfG3, "", 0.2];
+(group bmp3) setCombatMode "aware";
+bmp3 setPos (getPos glReinfVehSpawn);
+(crew bmp3) join reinfG3;
+
+~10
+
+"OfficerE" createUnit [position glReinfSpawn, reinfG4, "", 0.8, "CORPORAL"];
+"SoldierEB" createUnit [position glReinfSpawn, reinfG4, "", 0.2];
+"SoldierELAW" createUnit [position glReinfSpawn, reinfG4, "", 0.2];
+"SoldierEMedic" createUnit [position glReinfSpawn, reinfG4, "", 0.2];
+"SoldierEMG" createUnit [position glReinfSpawn, reinfG4, "", 0.2];
+"SoldierEG" createUnit [position glReinfSpawn, reinfG4, "", 0.2];
+"SoldierELAW" createUnit [position glReinfSpawn, reinfG4, "", 0.2];
+"SoldierEB" createUnit [position glReinfSpawn, reinfG4, "", 0.2];
+(group bmp4) setCombatMode "aware";
+bmp4 setPos (getPos glReinfVehSpawn);
+(crew bmp4) join reinfG4;
