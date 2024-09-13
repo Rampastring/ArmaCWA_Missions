@@ -1,0 +1,49 @@
+titleCut ["","BLACK OUT", 2]
+~2
+
+_camera = "camera" camCreate [8388.39,4348.80,0.74] 
+_camera cameraEffect ["internal","back"]
+
+titleCut [localize "STR_c02n01","BLACK IN", 2]
+
+enableRadio false
+;=== 13:16:38
+_camera camSetTarget [-89020.25,-27181.38,-14556.71]
+_camera camSetPos [4280.10,5713.20,2.76]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 13:16:51
+_camera camSetTarget [-57983.25,82591.55,-14556.94]
+_camera camSetPos [4280.10,5713.20,2.76]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+;=== 13:17:05
+_camera camSetTarget [103208.00,6241.20,-14557.14]
+_camera camSetPos [4280.10,5713.20,2.76]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+10 fadeMusic 0
+
+;=== 13:17:20
+_camera camSetTarget [-25271.50,-88699.24,-14556.76]
+_camera camSetPos [4280.10,5713.20,2.76]
+_camera camSetFOV 0.700
+_camera camCommit 10
+~8
+titleCut ["","BLACK OUT", 2]
+@camCommitted _camera
+
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+Over = true
+
+
+

@@ -1,0 +1,11 @@
+#start
+
+@ vehicle player != player
+
+_x = vehicle player
+
+@ vehicle player != _x
+
+group player leaveVehicle _x
+
+goto "start"

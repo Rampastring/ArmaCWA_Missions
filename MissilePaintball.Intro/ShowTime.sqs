@@ -1,0 +1,25 @@
+; Script for showing the time
+; _values - values of "ShowMe" from Timing.sqs
+; _strings - strings seen in Hints - has to have the same number of values as "_values"
+
+
+~2
+
+_values = [10000, 3600, 1800, 1200, 600, 300, 120]
+_strings = ["", localize "STRD_07", localize "STRD_06", localize "STRD_05", localize "STRD_04", localize "STRD_03", localize "STRD_02"]
+
+_k=0
+
+#Back
+
+? _k == count _values : exit
+
+_current = _values select _k
+_next = _values select (_k + 1)
+
+@ ShowMe < _current
+? ShowMe == _next : Hint (_strings select _k+1)
+
+_k=_k+1;
+
+goto "Back"

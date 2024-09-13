@@ -1,0 +1,60 @@
+_who = _this
+titleCut ["","BLACK IN", 150]
+
+_camera = "camera" camCreate [8388.39,4348.80,0.74] 
+_camera cameraEffect ["internal","back"]
+
+enableRadio false
+
+;=== 14:29:57
+_camera camSetTarget [-85869.22,-23556.60,-9769.65]
+_camera camSetPos [9729.75,4098.07,2.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~1
+
+@ ("alive _x" count GSeznam) == (count GSeznam)
+
+~1
+
+? local AL : AL exec "Rozhod.sqs"
+removeallweapons _who;
+
+? local AL : goto "Next"
+? (side _who) == east : goto "East"
+
+_who addweapon "M16";
+_who addmagazine "M16";
+_who addmagazine "M16";
+_who addmagazine "M16";
+
+goto "Next"
+#East
+
+_who addweapon "AK74";
+_who addmagazine "AK74";
+_who addmagazine "AK74";
+_who addmagazine "AK74";
+
+#Next
+
+titleText ["3","Plain"]
+~0.4
+titleText ["2","Plain"]
+~0.4
+titleText ["1","Plain"]
+~0.4
+titleText ["0","Plain"]
+~0.4
+titleText [" ","Plain"]
+
+titleCut ["","BLACK IN", 1]
+
+NewRound=false;
+
+enableRadio true
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera

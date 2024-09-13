@@ -1,0 +1,118 @@
+; Main control script for "Paintball" game
+
+#Begin
+
+enableRadio false;
+
+Kolo = 0;
+UsaP = 0;
+RusP = 0;
+
+U1d = 0;
+U2d = 0;
+U3d = 0;
+U4d = 0;
+
+R1d = 0;
+R2d = 0;
+R3d = 0;
+R4d = 0;
+
+? Konec : exit
+
+A0=1; PublicVariable "A0"
+Dark=1;
+PublicVariable "Dark";
+A1=1; PublicVariable "A1"
+@ Dark == 0
+
+A2=1; PublicVariable "A2"
+
+? U1==U1 : U1 setpos getmarkerpos "mE1";
+? U2==U2 : U2 setpos getmarkerpos "mE2";
+? U3==U3 : U3 setpos getmarkerpos "mE3";
+? U4==U4 : U4 setpos getmarkerpos "mE4";
+? U1==U1 : U1 setdir 180;
+? U2==U2 : U2 setdir 180;
+? U3==U3 : U3 setdir 180;
+? U4==U4 : U4 setdir 180;
+
+? R1==R1 : R1 setpos getmarkerpos "mR1";
+? R2==R2 : R2 setpos getmarkerpos "mR2";
+? R3==R3 : R3 setpos getmarkerpos "mR3";
+? R4==R4 : R4 setpos getmarkerpos "mR4";
+? R1==R1 : R1 setdir 0;
+? R2==R2 : R2 setdir 0;
+? R3==R3 : R3 setdir 0;
+? R4==R4 : R4 setdir 0;
+
+Weapons = 1;
+PublicVariable "Weapons";
+
+@ Weapons == 0
+
+; GO GO GO
+
+enableRadio true;
+
+#Loop
+~0.5
+
+? Konec : exit
+
+? U1d==1 : UsaP=UsaP+1; U1d=0;
+? U2d==1 : UsaP=UsaP+1; U2d=0;
+? U3d==1 : UsaP=UsaP+1; U3d=0;
+? U4d==1 : UsaP=UsaP+1; U4d=0;
+
+? R1d==1 : RusP=RusP+1; R1d=0;
+? R2d==1 : RusP=RusP+1; R2d=0;
+? R3d==1 : RusP=RusP+1; R3d=0;
+? R4d==1 : RusP=RusP+1; R4d=0;
+
+? !(((UsaP>=USSez) or (RusP>=RusSez) or (Kolo != 0)) or (not AmmoE and not AmmoW and (not isnull flagowner vlajkaUSA and alive flagowner vlajkaUSA) and (not isnull flagowner vlajkaRus and alive flagowner vlajkaRus))) : goto "Loop"
+
+~1
+? Kolo != 0 : goto "FlagD"
+
+? not ((UsaP >= USSez) and (RusP >= RusSez)) : goto "Somebody"
+
+; Well - it's doublekill
+#Doublekill
+ShowSN=1; PublicVariable "ShowSN";
+goto "Both";
+
+; Else - somebody won
+
+#Somebody
+
+Kolo = 0;
+? (RusP >=RusSez) : Kolo = US
+? (UsaP >=USSez) : Kolo = Rus
+? Kolo == 0 : goto "Doublekill"
+; last line means that nobody won - so the round ended becouse of lack of ammunition
+
+#FlagD
+? Kolo == Rus : goto "RusKolo"
+
+UScoreP=UScoreP+1;
+PublicVariable "UScoreP";
+
+ShowSW=1; PublicVariable "ShowSW";
+goto "Both";
+
+#RusKolo
+RScoreP=RScoreP+1;
+PublicVariable "RScoreP";
+
+ShowSE=1; PublicVariable "ShowSE";
+
+#Both
+;playSound "UScore";
+
+? param2<10000 and ((UScoreP>=param2) or (RScoreP>=param2)) : exit
+
+NewRound = 1;
+publicVariable "NewRound";
+
+goto "Begin";

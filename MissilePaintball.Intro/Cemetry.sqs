@@ -1,0 +1,14 @@
+constC=150;
+publicVariable "ConstC";
+
+_const=3;
+
+#Begin
+
+~20
+? constC > 1200 : _const = -3
+? constC < 150 : _const = 3
+
+constC=constC+_const;
+publicVariable "ConstC";
+goto "Begin"

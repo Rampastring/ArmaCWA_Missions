@@ -1,0 +1,5 @@
+"2" objStatus "HIDDEN";
+
+removeAllWeapons bop1; bop1 addMagazine "M21"; bop1 addMagazine "M21"; bop1 addMagazine "M21"; bop1 addMagazine "M21"; bop1 addWeapon "M21"; bop1 addMagazine "LAWLauncher"; bop1 addMagazine "LAWLauncher"; bop1 addMagazine "LAWLauncher"; bop1 addWeapon "LAWLauncher";
+removeAllWeapons bop2; bop2 addMagazine "M21"; bop2 addMagazine "M21"; bop2 addMagazine "M21"; bop2 addMagazine "M21"; bop2 addWeapon "M21"; bop2 addMagazine "LAWLauncher"; bop2 addMagazine "LAWLauncher"; bop2 addMagazine "LAWLauncher"; bop2 addWeapon "LAWLauncher";
+removeAllWeapons bop3; bop3 addMagazine "M21"; bop3 addMagazine "M21"; bop3 addMagazine "M21"; bop3 addMagazine "M21"; bop3 addWeapon "M21"; bop3 addMagazine "LAWLauncher"; bop3 addMagazine "LAWLauncher"; bop3 addMagazine "LAWLauncher"; bop3 addWeapon "LAWLauncher";

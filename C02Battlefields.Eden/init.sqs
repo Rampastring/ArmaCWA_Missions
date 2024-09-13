@@ -1,0 +1,5 @@
+[] exec "vehicle_out.sqs"
+
+titleCut ["","BLACK IN", 2]
+"3" objStatus "hidden"
+"end" setMarkerType "empty"

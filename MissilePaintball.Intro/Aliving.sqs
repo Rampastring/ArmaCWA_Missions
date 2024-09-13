@@ -1,0 +1,13 @@
+titleCut ["","BLACK IN", 150]
+
+GSeznam=[]
+
+? R1==R1 : GSeznam=GSeznam + [R1]
+? R2==R2 : GSeznam=GSeznam + [R2]
+? R3==R3 : GSeznam=GSeznam + [R3]
+? R4==R4 : GSeznam=GSeznam + [R4]
+
+? U1==U1 : GSeznam=GSeznam + [U1]
+? U2==U2 : GSeznam=GSeznam + [U2]
+? U3==U3 : GSeznam=GSeznam + [U3]
+? U4==U4 : GSeznam=GSeznam + [U4]

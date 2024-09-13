@@ -1,0 +1,30 @@
+UScoreP=0;
+RScoreP=0;
+
+#Beginning
+
+@ Dark == 1
+
+~3
+
+? Konec : exit
+BB=1; PublicVariable "BB"
+
+; Wait for everybody alive
+@ (USSez) + (RusSez) == (("alive _x" count list USS) + ("alive _x" count list RusS))
+
+~1
+Dark = 0;
+CC=1; PublicVariable "CC"
+
+@ Weapons == 1
+
+~8
+
+NewRound = 0;
+Weapons = 0;
+
+enableRadio true;
+
+@ NewRound == 1
+goto "Beginning"

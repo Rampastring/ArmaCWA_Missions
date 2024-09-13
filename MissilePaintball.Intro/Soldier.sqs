@@ -1,0 +1,19 @@
+; Cycle for soldier
+
+#Begin
+_first = true;
+
+@ (not alive _this) and (_first)
+Hint "Umrel";
+_first = false;
+UsaP=UsaP+1;
+~1
+
+#Living
+@ not alive _this
+Hint "Umrel zas"
+@ alive _this
+? NewRound : goto "Begin"
+
+removeAllWeapons _this;
+goto "Living";

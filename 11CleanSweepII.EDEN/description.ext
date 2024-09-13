@@ -1,0 +1,112 @@
+respawn=4;
+respawndelay=5;
+onLoadMission=$STR_S06n40
+
+
+class Weapons
+{
+    class M16
+    {
+        count = 3;
+    };
+    class M16GrenadeLauncher
+    {
+        count = 1;
+    };
+    class M4
+    {
+        count = 3;
+    };
+    class M60
+    {
+        count = 1;
+    };
+    class LAWLauncher
+    {
+        count = 1;
+    };
+    class M21
+    {
+        count = 2;
+    };   
+};
+
+class Magazines
+{
+    class M16
+    {
+        count = 30;
+    };
+    class HK
+    {
+        count = 20;
+    };
+    class HandGrenade
+    {
+        count = 30;
+    };
+    class GrenadeLauncher
+    {
+        count = 10;
+    };
+    class M4
+    {
+        count = 30;
+    };
+    class M60
+    {
+        count = 10;
+    };
+    class LAWLauncher
+    {
+        count = 4;
+    };
+    class Mortar
+    {
+        count = 5;
+    };
+    class M21
+    {
+        count = 30;
+    };
+    class PipeBomb
+    {
+        count = 20;
+    };
+    class Mine
+    {
+        count = 2;
+    };
+    class SmokeShell
+    {
+        count = 10;
+    };
+    
+};
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class S06r01
+	{
+		name = "S06r01";
+		sound[] = {"S06r01.ogg", db-40, 1.0};
+		title = $STR_S06r01;
+	};
+	class S06r02
+	{
+		name = "S06r02";
+		sound[] = {"S06r02.ogg", db-40, 1.0};
+		title = $STR_S06r02;
+	};
+};
+class CfgSFX
+{
+	sounds[] = {};
+};
+class CfgEnvSounds
+{
+	sounds[] = {};
+};

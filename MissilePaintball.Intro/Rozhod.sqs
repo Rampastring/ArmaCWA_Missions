@@ -1,0 +1,18 @@
+
+? U1==U1 : U1 setpos getmarkerpos "mE1";
+? U2==U2 : U2 setpos getmarkerpos "mE2";
+? U3==U3 : U3 setpos getmarkerpos "mE3";
+? U4==U4 : U4 setpos getmarkerpos "mE4";
+? U1==U1 : U1 setdir 180;
+? U2==U2 : U2 setdir 180;
+? U3==U3 : U3 setdir 180;
+? U4==U4 : U4 setdir 180;
+
+? R1==R1 : R1 setpos getmarkerpos "mR1";
+? R2==R2 : R2 setpos getmarkerpos "mR2";
+? R3==R3 : R3 setpos getmarkerpos "mR3";
+? R4==R4 : R4 setpos getmarkerpos "mR4";
+? R1==R1 : R1 setdir 0;
+? R2==R2 : R2 setdir 0;
+? R3==R3 : R3 setdir 0;
+? R4==R4 : R4 setdir 0;

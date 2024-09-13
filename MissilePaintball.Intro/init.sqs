@@ -1,0 +1,16 @@
+?param1<9000:estimatedTimeLeft param1
+
+titleCut ["","BLACK IN", 150]
+
+requiredversion "1.30"
+
+enableRadio false;
+
+weapons = 0;
+Konec=false;
+Ukn=0;
+AmmoE=true;
+AmmoW=true;
+
+DedServ=true;
+? Local AL and (Player == Player) : DedServ=false

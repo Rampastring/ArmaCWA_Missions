@@ -1,0 +1,54 @@
+_camera = "camera" camCreate [8388.39,4348.80,0.74] 
+_camera cameraEffect ["internal","back"]
+
+enableRadio false
+
+;=== 14:29:57
+_camera camSetTarget [-85869.22,-23556.60,-9769.65]
+_camera camSetPos [9729.75,4098.07,2.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 14:30:12
+_camera camSetTarget [-45681.05,-78586.20,-9768.64]
+_camera camSetPos [9714.35,4089.77,9.81]
+_camera camSetFOV 0.815
+_camera camCommit 5
+@camCommitted _camera
+
+;=== 14:30:33
+_camera camSetTarget target
+_camera camSetPos [9665.68,4090.26,7.81]
+_camera camSetFOV 0.815
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 14:31:10
+_camera camSetTarget target
+_camera camSetPos [9607.44,4028.82,7.81]
+_camera camSetFOV 0.815
+_camera camCommit 5
+@camCommitted _camera
+
+;=== 14:31:43
+_camera camSetTarget target
+_camera camSetPos [9664.52,3973.31,7.17]
+_camera camSetFOV 0.815
+_camera camCommit 5
+~3
+cuttext ["3","plaindown",0]
+~4
+cuttext ["2","plaindown",0]
+@camCommitted _camera
+cuttext ["1","plaindown",0]
+~1
+cuttext ["START","plaindown",0]
+~1
+
+
+
+
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera

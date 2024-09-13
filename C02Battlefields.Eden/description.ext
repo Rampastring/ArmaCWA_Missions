@@ -1,0 +1,38 @@
+respawn=4;
+respawndelay=5;
+onLoadMission=$STR_c02n04
+
+class CfgSounds
+{
+	sounds[] = 
+	{
+	};
+
+	class c02v01
+	{
+		name = "";
+		sound[] = {"c02v01.ogg", db-10, 1.0};
+		titles[] = 
+			{
+				0, $STR_c02v01
+			};
+	};
+};
+
+class CfgRadio
+{
+	sounds[] = {};
+
+	class c02r01
+	{
+		name = "C02r01";
+		sound[] = {"C02r01.ogg", db-40, 1.0};
+		title = $STR_c02r01;
+	};
+	class c02r02
+	{
+		name = "C02r02";
+		sound[] = {"C02r02.ogg", db-40, 1.0};
+		title = $STR_c02r02;
+	};
+};

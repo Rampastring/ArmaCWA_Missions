@@ -1,0 +1,103 @@
+respawn=3
+respawndelay=4
+
+onLoadMission=$STRD_01
+
+titleParam1 = $STRD_08;
+valuesParam1[] = {10000, 300, 600, 900, 1200, 1500, 1800, 2700, 3600, 7200};
+defValueParam1 = 1800;
+textsParam1[] = {$STRD_12, $STRD_T005, $STRD_T010, $STRD_T015, $STRD_T020, $STRD_T025, $STRD_T030, $STRD_T045, $STRD_T060, $STRD_T120};
+
+titleParam2 = $STRD_09;
+valuesParam2[] = {10000, 5, 7, 10, 15, 20, 25, 30};
+defValueParam2 = 15;
+textsParam2[] = {$STRD_12, 5, 7, 10, 15, 20, 25, 30};
+
+
+class CfgSounds
+{
+	sounds[] = 
+		{
+			UCapture, Pv01, Pv02, Pv03, Pv04,
+			Pv05, Pv06, Pv07, Pv08, Pv09, Pv10
+		};
+	class UCapture
+	
+	{
+		name = "UCapture";
+		sound[] = {"UCapture.ogg", 10, 1.0};
+		titles[] = {	};
+	};
+	class Pv01
+	
+	{
+		name = "Pv01";
+		sound[] = {"Pv01.ogg", 10, 1.0};
+		titles[] = {	};
+	};
+	class Pv02
+	
+	{
+		name = "Pv02";
+		sound[] = {"Pv02.ogg", 10, 1.0};
+		titles[] = {	};
+	};
+	class Pv03
+	
+	{
+		name = "Pv03";
+		sound[] = {"Pv03.ogg", 10, 1.0};
+		titles[] = {	};
+	};
+	class Pv04
+	
+	{
+		name = "Pv04";
+		sound[] = {"Pv04.ogg", 10, 1.0};
+		titles[] = {	};
+	};
+	class Pv05
+	
+	{
+		name = "Pv05";
+		sound[] = {"Pv05.ogg", 10, 1.0};
+		titles[] = {	};
+	};
+	class Pv06
+	
+	{
+		name = "Pv06";
+		sound[] = {"Pv06.ogg", 10, 1.0};
+		titles[] = {	};
+	};
+	class Pv07
+	
+	{
+		name = "Pv07";
+		sound[] = {"Pv07.ogg", 10, 1.0};
+		titles[] = {	};
+	};
+	class Pv08
+	
+	{
+		name = "Pv08";
+		sound[] = {"Pv08.ogg", 10, 1.0};
+		titles[] = {	};
+	};
+	class Pv09
+	
+	{
+		name = "Pv09";
+		sound[] = {"Pv09.ogg", 10, 1.0};
+		titles[] = {	};
+	};
+	class Pv10
+	
+	{
+		name = "Pv010";
+		sound[] = {"Pv010.ogg", 10, 1.0};
+		titles[] = {	};
+	};
+
+};
+

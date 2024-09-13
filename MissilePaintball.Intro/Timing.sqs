@@ -1,0 +1,28 @@
+; Script for timing in the MP mission
+; There are several triggers in the mission - condition ShowMe==xxxx (xxxx - time) with Hint "xxx minutes remaining"
+
+? Param1 == 10000 : Exit
+
+~1
+
+_times = [3600, 1800, 1200, 600, 300, 120];
+_i = -1;
+
+
+#Again
+_i=_i+1;
+
+? _i == (count _times) : Exit
+_j = _times select _i;
+
+? Param1 < _j : goto "Again"
+
+
+#Loop
+@ Param1-time <= _j;
+ShowMe=_j; PublicVariable "ShowMe";
+
+? _i == (count _times) - 1 : Exit
+_i=_i+1
+_j = _times select _i
+goto "Loop"

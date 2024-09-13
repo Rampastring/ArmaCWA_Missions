@@ -1,0 +1,145 @@
+;U2 - to be replaced
+
+UScoreP=0;
+RScoreP=0;
+
+#Beginning
+
+@ Dark == 1
+
+; ==========================================
+;             	Kamera
+; ==========================================
+
+titleCut ["","BLACK IN", 3]
+
+_camera = "camera" camCreate [8388.39,4348.80,0.74] 
+_camera cameraEffect ["internal","back"]
+
+enableRadio false;
+
+;=== 14:32:54
+_camera camSetTarget [9660.22,4034.04,0.00]
+_camera camSetPos [9580.43,4034.10,6.90]
+_camera camSetFOV 0.491
+_camera camCommit 0
+@camCommitted _camera
+
+
+;=== 14:33:14
+_camera camSetTarget [9660.21,4032.91,0.00]
+_camera camSetPos [9580.43,4034.10,10.47]
+_camera camSetFOV 0.423
+_camera camCommit 3
+
+? Konec : exit
+
+; Wait for everybody alive
+; @ ("alive _x" count Units EastG) + ("alive _x" count Units WestG) == (count units EastG + count units WestG)
+@ (USSez) + (RusSez) == (("alive _x" count list USS) + ("alive _x" count list RusS))
+
+~1
+Dark = 0;
+
+@ Weapons == 1
+
+removeallweapons U2;
+
+? (side U2) == east : goto "East"
+
+U2 addmagazine "M4";
+U2 addmagazine "M4";
+U2 addmagazine "M4";
+U2 addweapon "M4";
+U2 addmagazine "LAWLauncher";
+U2 addmagazine "LAWLauncher";
+U2 addmagazine "LAWLauncher";
+U2 addweapon "LAWLauncher";
+U2 selectweapon "M4";
+
+goto "Next"
+#East
+
+U2 addmagazine "AK74";
+U2 addmagazine "AK74";
+U2 addmagazine "AK74";
+U2 addweapon "AK74";
+U2 addmagazine "RPGLauncher";
+U2 addmagazine "RPGLauncher";
+U2 addmagazine "RPGLauncher";
+U2 addweapon "RPGLauncher";
+U2 selectweapon "AK74";
+
+#Next
+
+~2
+titleText [localize "STRD_Pv03","Plain"]
+sPv03=true;
+~1
+titleText [localize "STRD_Pv04","Plain"]
+sPv04=true;
+
+;=== 14:33:23
+_camera camSetTarget [9660.21,4032.91,0.00]
+_camera camSetPos [9580.43,4034.10,12.49]
+_camera camSetFOV 0.423
+_camera camCommit 1
+@camCommitted _camera
+
+
+titleText [localize "STRD_Pv05","Plain"]
+sPv05=true;
+~1
+titleText [localize "STRD_Pv06","Plain"]
+sPv06=true;
+~1
+titleText [" ","Plain"]
+
+titleCut ["","BLACK IN", 1]
+
+NewRound = 0;
+Weapons = 0;
+
+enableRadio true;
+
+U2 setdammage 0;
+U2 switchmove "Combat";
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+; ==========================================
+;             	GAME
+; ==========================================
+
+; Cycle for U2ier
+
+sPv03=false;
+sPv04=false;
+sPv05=false;
+sPv06=false;
+
+
+@ (not alive U2) or (NewRound == 1) or not (vehicle U2 in list Inner)
+? NewRound == 1 : goto "Beginning"
+? not (vehicle U2 in (list Inner)) : U2 setdammage 1
+
+U2d=1; PublicVariable "U2d";
+
+~1
+
+#Living
+@ not alive U2 or (NewRound == 1) or (vehicle U2 in list Outer)
+? NewRound == 1 : goto "Beginning"
+? vehicle U2 in list Outer : U2 setdammage 1
+? (U2==player) : titleCut ["","BLACK OUT", 1]
+~1
+U2 setpos [getmarkerpos "Cemet" select 0, getmarkerpos "Cemet" select 1, ConstC];
+@ alive U2 or (NewRound == 1)
+? NewRound == 1 : goto "Beginning"
+? (U2==player) : titleCut ["","BLACK IN", 1]
+? side (U2) == west : U2 setDir 180
+? side (U2) == east : U2 setDir 0
+
+removeAllWeapons U2;
+goto "Living";

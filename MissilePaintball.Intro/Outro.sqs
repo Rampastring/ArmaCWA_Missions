@@ -1,0 +1,43 @@
+_camera = "camera" camCreate [8388.39,4348.80,0.74] 
+_camera cameraEffect ["internal","back"]
+
+enableRadio false
+
+;=== 16:08:12
+_camera camSetTarget [46651.71,-78748.68,-42041.27]
+_camera camSetPos [9649.00,4075.24,12.98]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~2
+
+; Who won?
+? (UScoreP>RScoreP) : playSound "Pv08"; Goto "Next"
+? (RScoreP>UScoreP) : playSound "Pv09"; Goto "Next"
+playSound "Pv10"
+
+#Next
+
+~3
+
+;=== 16:08:51
+_camera camSetTarget [102494.95,-7246.01,-35292.37]
+_camera camSetPos [9628.66,4039.82,12.98]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+titleCut ["","BLACK OUT", 3]
+~3
+
+;player cameraEffect ["terminate","back"]
+;camDestroy _camera
+
+? local AL : goto "EndNext"
+Over=true;
+exit;
+
+#EndNext
+~2
+Over=true;

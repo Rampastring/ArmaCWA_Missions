@@ -1,0 +1,19 @@
+; Parachute
+
+_aunits = units rus
+_i = 0
+_j = count _aunits
+
+#Here
+(_aunits select _i) action ["EJECT",MI]
+unassignvehicle (_aunits select _i)
+_i=_i+1
+~1
+?_j>_i:goto "Here"
+
+"unassignvehicle _x" forEach _aunits
+
+vyhozeno = true
+
+exit
+

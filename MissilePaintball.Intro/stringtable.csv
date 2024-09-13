@@ -1,0 +1,60 @@
+LANGUAGE, English,French,Italian,Spanish,German, Comment
+
+
+, ---------- VOICES ------------,,,,,
+
+STRD_Pv01,"One point for the West!","Un point pour l'Ouest !","Un punto per l'Occidente!","Punto para el Oeste","Ein Punkt für den Westen!", Voice from heaven
+STRD_Pv02,"One point for the East!","Un point pour l'Est !","Un punto per l'Oriente!","Punto para el Este","Ein Punkt für den Osten!", Voice from heaven
+STRD_Pv03,"Three!","Trois !","Tre!","¡Tres!","Drei!", Voice from heaven
+STRD_Pv04,"Two!","Deux !","Due!","¡Dos!","Zwei!", Voice from heaven
+STRD_Pv05,"One!","Un !","Uno!","¡Uno!","Eins!", Voice from heaven
+STRD_Pv06,"Go, go, go!","Allez, allez, allez !","Forza, forza, forza!","¡Vamos, vamos!","Los, los, los!", Voice from heaven
+STRD_Pv07,"No one gets a point.","Personne ne marque de point.","Nessuno conquista punti.","Nadie se lleva el punto.","Keine Punkte vergeben.", Voice from heaven
+STRD_Pv08,"Game over.\n The West won!","Partie terminée.\n L'Ouest a gagné !","Fine partita.\n L'Occidente ha vinto!","Fin del juego.\nVictoria de las fuerzas del Oeste.","Spiel vorbei.\n Sieg für den Westen!", Voice from heaven
+STRD_Pv09,"Game over.\n The East won!","Partie terminée.\n L'Est a gagné !","Fine partita.\n L'Oriente ha vinto!","Fin del juego.\nVictoria de las fuerzas del Este.","Spiel vorbei.\n Sieg für den Osten!", Voice from heaven
+STRD_Pv10,"Game over.\n Nobody won.","Partie terminée.\n Personne n'a gagné !","Fine partita.\n Nessuno ha vinto.","Fin del juego.\n No ha ganado nadie.","Spiel vorbei.\n Kein Sieger.", Voice from heaven
+,,,,,,
+,,,,,,
+, ---------- Titles only ------------, ---------- Titles only ------------, ---------- Titles only ------------, ---------- Titles only ------------, ---------- Titles only ------------,
+,,,,,,
+STRD_01,Real Paintball,Paintball meurtrier,Vero Paintball,Juego de guerra real,Echtes Paintball., PreMission
+,,,,,,
+STRD_02,2 minutes remaining,Il vous reste 2 minutes,2 minuti rimasti,Quedan 2 minutos,noch 2 Minuten, Title
+STRD_03,5 minutes remaining,Il vous reste 5 minutes,5 minuti rimasti,Quedan 5 minutos,noch 5 Minuten, Title
+STRD_04,10 minutes remaining,Il vous reste 10 minutes,10 minuti rimasti,Quedan 10 minutos,noch 10 Minuten, Title
+STRD_05,20 minutes remaining,Il vous reste 20 minutes,20 minuti rimasti,Quedan 20 minutos,noch 20 Minuten, Title
+STRD_06,30 minutes remaining,Il vous reste 30 minutes,30 minuti rimasti,Quedan 30 minutos,noch 30 Minuten, Title
+STRD_07,1 hour remaining,Il vous reste 1 heure,1 ora rimasta,Queda 1 hora,noch 1 Stunde, Title
+,,,,,,
+STRD_08,Time:,Heure :,Ora:,Hora:,Uhrzeit:, Param
+STRD_09,Score to win:,Score à atteindre :,Punteggio per vincere:,Puntuación para ganar:,Siegpunktzahl:, Param
+,,,,,,
+STRD_12,Unlimited,Illimité,Illimitato,Ilimitada,Ungebrenzt, Param
+,,,,,,
+STRD_13,Game Over\nFinal score - West %1 : East %2,Partie terminée\nScore final - Ouest %1 : Est %2,Fine partita\nPunteggio finale - Occidente %1 : Oriente %2,Fin del juego\nResultado - Oeste %1 : Este %2,Spiel vorbei\nEndpunktzahl - Westen %1 : Osten %2, Title
+,,,,,,
+STRD_14,One point for the East!\nStatus - West %1 : East %2,Un point pour l'Est !\nScore - Ouest %1 : Est %2,Un punto all'Oriente!\nStato - Occidente %1 : Oriente %2,Punto para el Este\nPuntuación - Oeste %1 : Este %2,Ein Punkt für den Osten!\nStand - Westen %1 : Osten %2, Status
+STRD_15,One point for the West!\nStatus - West %1 : East %2,Un point pour l'Ouest !\nScore - Ouest %1 : Est %2,Un punto all'Occidente!\nStato - Occidente %1 : Oriente %2,Punto para el Oeste\nPuntuación - Oeste %1 : Este %2,Ein Punkt für den Westen!\nStand - Westen %1 : Osten %2, Status
+STRD_15a,"No one gets a point\nStatus - West %1 : East %2","Personne ne marque de point\nScore - Ouest %1 : Est %2","Nessuno conquista punti\nStato - Occidente %1 : Oriente %2","Nadie se lleva el punto\nPuntuación - Oeste %1 : Este %2", "Ein Punkt für den Westen!\nStand - Westen %1 : Osten %2", Title
+,,,,,,
+STRD_16,%1 has the Russian flag,%1 a le drapeau russe,%1 ha la bandiera russa,%1 tiene la bandera rusa,%1 hat die russische Fahne, Status
+STRD_17,%1 has the USA flag,%1 a le drapeau américain,%1 ha la bandiera americana,%1 tiene la bandera estadounidense,%1 hat die US-Fahne, Status
+,,,,,,
+STRD_18,The Russian flag is back...,Le drapeau russe est de retour...,La bandiera russa è tornata indietro...,La bandera rusa ha sido recuperada,Die russische Fahne ist wieder da ..., Status
+STRD_19,The USA flag is back...,Le drapeau américain est de retour...,La bandiera americana è tornata indietro...,La bandera estadounidense ha sido recuperada,"Die US-Fahne ist wieder da ..", Status
+,,,,,,
+STRD_T005,5 min,5 mn,5 min.,5 minutos,5 Min., Param
+STRD_T010,10 min,10 mn,10 min.,10 minutos,10 Min., Param
+STRD_T015,15 min,15 mn,15 min.,15 minutos,15 Min., Param
+STRD_T020,20 min,20 mn,20 min.,20 minutos,20 Min., Param
+STRD_T025,25 min,25 mn,25 min.,25 minutos,25 Min., Param
+STRD_T030,30 min,30 mn,30 min.,30 minutos,30 Min., Param
+STRD_T045,45 min,45 mn,45 min.,45 minutos,45 Min., Param
+STRD_T060,1 hour,1 heure,1 ora,1 hora,1 Stunde, Param
+STRD_T120,2 hours,2 heures,2 ore,2 horas,2 Stunden, Param
+,,,,,,
+Comment,,,,,, ADDED
+,,,,,,
+STRD_20,Show score,Afficher score,Mostra punteggio,Mostrar puntuación,Punkte anzeigen, Radio Title
+STRD_21,Status - West %1 : East %2,Score - Ouest %1 : Est %2,Stato - Occidente %1 : Oriente %2,Puntuación - Oeste %1 : Este %2,Stand - Westen %1 : Osten %2, Title
+,,,,,,

@@ -1,0 +1,4 @@
+#SetVel
+lst setVelocity [0, 0, 0];
+~1
+goto "SetVel"

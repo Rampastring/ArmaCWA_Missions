@@ -1,0 +1,14 @@
+spawnCount = 0;
+
+#Begin
+if (alive lst) then { goto "Spawn" } else { exit }
+
+#Spawn
+unitGrp1 = "SoldierELAW" createUnit [position sFlag1, eSpawnGroup1 ];
+unitGrp2 = "SoldierE" createUnit [position sFlag2, eSpawnGroup2 ];
+unitGrp3 = "SoldierELAW" createUnit [position sFlag3, eSpawnGroup3 ];
+~5
+
+if ((!isNull unitGrp1) or (!isNull unitGrp2) or (!isNull unitGrp3)) then { spawnCount = spawnCount + 1 }
+
+if (spawnCount > 25) then { exit } else { goto "Begin" }
