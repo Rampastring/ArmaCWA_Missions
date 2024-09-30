@@ -64,10 +64,10 @@ R4 addmagazine "AK74";
 R4 addmagazine "AK74";
 R4 addmagazine "AK74";
 R4 addweapon "AK74";
-R1 addmagazine "RPGLauncher";
-R1 addmagazine "RPGLauncher";
-R1 addmagazine "RPGLauncher";
-R1 addweapon "RPGLauncher";
+R4 addmagazine "RPGLauncher";
+R4 addmagazine "RPGLauncher";
+R4 addmagazine "RPGLauncher";
+R4 addweapon "RPGLauncher";
 R4 selectweapon "AK74";
 
 #Next
