@@ -1,0 +1,19 @@
+[west, "HQ"] sideChat "THE ENEMY IS COUNTERATTACKING PETROVICE. I REPEAT, THE ENEMY IS COUNTERATTACKING PETROVICE."
+
+~5
+
+[west, "HQ"] sideChat "ALPHA, CHANGE OF PLANS. FALL BACK AND FLANK FRYMBURK FROM THE WEST."
+
+~3
+
+[west, "HQ"] sideChat "FROM THERE, CONTINUE CLOCKWARDS AND STRIKE THE ENEMY ATTACK FORCE FROM BEHIND."
+
+"1" objStatus "FAILED"
+
+~1
+
+"2" objStatus "ACTIVE"
+"3" objStatus "ACTIVE"
+"4" objStatus "ACTIVE"
+"FrymburkSolid" setMarkerSize [200, 200];
+"SlapySolid" setMarkerSize [200, 200];
