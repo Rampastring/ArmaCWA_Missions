@@ -5459,8 +5459,6 @@ class Mission
 			expActiv="""1"" objStatus ""DONE""; o1Done = true";
 			class Effects
 			{
-				titleType="TEXT";
-				title="YYEAAAAAHHH";
 			};
 		};
 		class Item1
