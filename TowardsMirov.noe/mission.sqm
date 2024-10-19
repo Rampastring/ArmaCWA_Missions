@@ -4450,7 +4450,7 @@ class Mission
 			age="UNKNOWN";
 			text="Init";
 			expCond="true";
-			expActiv="obj1 = false; obj2 = false; obj3 = false; petroviceFallen = false; surprised = false; ""1"" objStatus ""ACTIVE""; ""2"" objStatus ""HIDDEN""; ""3"" objStatus ""HIDDEN""; ""4"" objStatus ""HIDDEN""";
+			expActiv="obj1 = false; obj2 = false; obj3 = false; petroviceFallen = false; surprised = false; ""1"" objStatus ""ACTIVE"";";
 			class Effects
 			{
 				track="Track3";
