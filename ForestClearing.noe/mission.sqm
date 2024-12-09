@@ -3243,6 +3243,7 @@ class Mission
 					id=227;
 					side="GUER";
 					vehicle="OfficerG";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="LIEUTNANT";
@@ -5707,7 +5708,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=6;
+		items=10;
 		class Item0
 		{
 			position[]={3797.343262,135.056503,9050.520508};
@@ -5742,7 +5743,7 @@ class Mission
 			age="UNKNOWN";
 			text="Init";
 			expCond="true";
-			expActiv="wDetected = false; resDetected = false; setViewDistance 1200";
+			expActiv="wDetected = false; resDetected = false; noWest = false; noRes = false; setViewDistance 1200";
 			class Effects
 			{
 			};
@@ -5792,6 +5793,64 @@ class Mission
 			{
 			};
 			synchronizations[]={14,15};
+		};
+		class Item6
+		{
+			position[]={3752.162598,141.872543,8808.779297};
+			a=1000.000000;
+			b=1100.000000;
+			rectangular=1;
+			activationBy="WEST";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			text="noWest";
+			expActiv="noWest = true";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={3014.044678,242.148682,9520.545898};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="Init";
+			expCond="true";
+			expActiv="wDetected = false; resDetected = false; noWest = false; noRes = false; setViewDistance 1200";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={3738.032227,141.668488,8808.779297};
+			a=1000.000000;
+			b=1100.000000;
+			rectangular=1;
+			activationBy="GUER";
+			activationType="NOT PRESENT";
+			age="UNKNOWN";
+			text="noRes";
+			expActiv="noRes = true";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={3762.442383,140.685059,8808.913086};
+			a=0.000000;
+			b=0.000000;
+			type="END2";
+			age="UNKNOWN";
+			expCond="noWest and noRes";
+			class Effects
+			{
+				titleType="TEXT";
+				titleEffect="BLACK IN";
+				title="Failure";
+			};
 		};
 	};
 };
